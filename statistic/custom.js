@@ -5,7 +5,7 @@
 var ICON = new google.maps.MarkerImage('../img/olababy.png', null, null,
     new google.maps.Point(14, 13));
 
-var SHADOW = new google.maps.MarkerImage('medicare-shadow.png', null, null,
+var SHADOW = new google.maps.MarkerImage('../img/pinshadow.png', null, null,
     new google.maps.Point(14, 13));
 
 google.maps.event.addDomListener(window, 'load', function() {
