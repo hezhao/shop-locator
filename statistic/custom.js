@@ -35,22 +35,6 @@ google.maps.event.addDomListener(window, 'load', function() {
     return new google.maps.Marker(markerOptions);
   }
 
-  var infoBubble = new InfoBubble;
-  view.getInfoWindow = function(store) {
-    if (!store) {
-      return infoBubble;
-    }
-
-    var details = store.getDetails();
-
-    var html = ['<div class="store"><div class="title">', details.title,
-      '</div><div class="address">', details.address, '</div>',
-      '<div class="hours misc">', details.hours, '</div></div>'].join('');
-
-    infoBubble.setContent($(html)[0]);
-    return infoBubble;
-  };
-
   new storeLocator.Panel(panelDiv, {
     view: view
   });
